@@ -1,0 +1,28 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedbackstyle.css">
+</head>
+<body>
+    <div class="feedback-form-container">
+        <h2>Feedback Form</h2>
+        <form action="submit_feedback.php" method="POST" class="feedback-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" placeholder="Enter your feedback" rows="5" required></textarea>
+    
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    
+</body>
+</html>
